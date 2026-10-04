@@ -1,0 +1,16 @@
+*.bin binary
+manifest.json text eol=lf
+
+*.py text eol=lf
+*.spec text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.bat text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+*.jpg binary
+*.png binary
+*.pt binary
+*.onnx binary
+*.safetensors binary

@@ -1,0 +1,27 @@
+# Install torch/torchvision separately from the CUDA index, e.g.
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+torch
+torchvision
+
+# Detection and segmentation (YOLO + SAM 2, no CUDA compilation needed)
+ultralytics
+
+# CatVTON try-on
+diffusers
+transformers
+accelerate
+huggingface_hub
+safetensors
+
+# Imaging and UI
+opencv-python
+numpy
+Pillow
+PyQt5
+
+# Face swap (InsightFace + inswapper_128)
+onnxruntime
+insightface==0.7.3
+
+# IDM-VTON preprocessing (OpenPose)
+einops

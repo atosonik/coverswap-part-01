@@ -1,0 +1,50 @@
+/.venv/
+/venv/
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.eggs/
+dist-info/
+
+# PyInstaller
+/build/
+/dist/
+*.merging
+
+# One-file CoverSwap.exe is ~3 GB (PyTorch). Do not commit the chunks —
+# rebuild with CoverSwap.spec / scripts/build_release.bat.
+/runableparts/
+
+# Optional IDM-VTON clone + ~1 GB preprocessing checkpoints.
+/third_party/IDM-VTON/
+
+# Scratch and generated results
+/outputs/
+/samples/
+
+# Assembled model weights. The repo carries parts/ instead — run:
+#   python chunker.py merge
+/weights/
+
+# Download / build logs
+/outputs/*.log
+/pyinstaller.log
+
+# Archives fetched during setup (sources live in third_party/ or parts/)
+/third_party/IDM-VTON.zip
+/third_party/CatVTON.zip
+
+# PyInstaller generates .spec files, but CoverSwap.spec is hand-written.
+*.spec
+!CoverSwap.spec
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
